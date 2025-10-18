@@ -7,8 +7,10 @@ import java.util.List;
 
 @Service
 public class UserService {
+
     private final UserRepository repo;
 
+    // ✅ Proper constructor injection
     public UserService(UserRepository repo) {
         this.repo = repo;
     }
