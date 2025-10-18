@@ -5,7 +5,7 @@ import lombok.*;
 
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
-@Table(name = "users")
+@Table(name = "users") //this is just the database view for the user
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
